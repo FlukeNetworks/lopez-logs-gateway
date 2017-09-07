@@ -28,3 +28,27 @@ You can create a new Gateway service:
 Updating the existing Gateway code:
 
     claudia update
+
+## AWS Permissions
+
+This lambda will need permissions to put records to kinesis. The policy should look like:
+
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "Stmt1504821817000",
+                "Effect": "Allow",
+                "Action": [
+                    "kinesis:DescribeLimits",
+                    "kinesis:DescribeStream",
+                    "kinesis:ListStreams",
+                    "kinesis:PutRecord",
+                    "kinesis:PutRecords"
+                ],
+                "Resource": [
+                    "*"
+                ]
+            }
+        ]
+    }
