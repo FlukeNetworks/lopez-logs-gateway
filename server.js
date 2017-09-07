@@ -38,7 +38,8 @@ api.post('/logs', (request) => {
         console.error(err, err.stack);
         reject(err);
       } else {
-        resolve(`Successfully enqueued ${logs.length} logs`); // TODO: what should our real response be?
+        const jsonResponse = { num_processed: logs.length };
+        resolve(new api.ApiResponse(jsonResponse, {'Content-Type': 'application/json' }, 201));
       }
     });
   });
