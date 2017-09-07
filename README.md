@@ -18,6 +18,8 @@ You should have the [AWS CLI](https://aws.amazon.com/cli/) installed and configu
 
 ### Basic Usage
 
+NOTE: For these commands to work, you will need to have proper AWS permissions for creating/updating AWS Gateway/Lambda.
+
 You can create a new Gateway service:
 
     # Only run this once.
