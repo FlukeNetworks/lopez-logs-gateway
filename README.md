@@ -23,7 +23,7 @@ NOTE: For these commands to work, you will need to have proper AWS permissions f
 You can create a new Gateway service:
 
     # Only run this once.
-    claudia create --region us-east-1 --api-module server
+    claudia create --region us-east-1 --api-module server --kinesis-stream-name
 
 Updating the existing Gateway code:
 
