@@ -1,0 +1,17 @@
+{
+  "name": "lopez-logs",
+  "version": "0.1.0",
+  "description": "Lambda to push logs to kinesis",
+  "main": "index.js",
+  "author": "Brad Seefeld <brad.seefeld@flukenetworks.com>",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "aws-sdk": "^2.110.0",
+    "bluebird": "^3.5.0",
+    "claudia-api-builder": "^2.5.1"
+  },
+  "devDependencies": {
+    "claudia": "^2.14.2"
+  }
+}

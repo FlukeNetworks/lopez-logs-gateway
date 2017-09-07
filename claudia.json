@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "lopez-logs-executor",
+    "name": "lopez-logs",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "jelad0bzgl",
+    "module": "server"
+  }
+}
