@@ -1,3 +1,7 @@
+# THIS REPO HAS MOVED...
+This lambda collection has moved to the lopez-lambdas repo. Please make changes through that repo instead.
+
+
 # Lopez Logging Gateway (AWS)
 
 This system sets up an AWS Gateway for receiving logs from UI clients over HTTPS and pushing them into a kinesis stream, to be later processed by Logstash for ingestion to Elasticsearch.
